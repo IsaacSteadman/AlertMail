@@ -1,0 +1,14 @@
+{
+  "include": [
+    "server/**/*"
+  ],
+  "exclude": [
+    "src/**"
+  ],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "target": "ES2020",
+    "module": "CommonJS",
+    "outDir": "./dist-server"
+  }
+}

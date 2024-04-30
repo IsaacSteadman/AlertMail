@@ -118,7 +118,7 @@ async function init() {
     console.log(`down detector enabled (name = ${JSON.stringify(ddName)})`);
     setIntervalDayAligned(async (time) => {
       try {
-        const res = await fetch(`http://10.0.0.39:3000/clear_status/${ddName}`);
+        const res = await fetch(`http://localhost:3000/clear_status/${ddName}`);
         await res.json();
       } catch (exc) {
         if (time % (1000 * 60 * 60 * 4) === 0) {
